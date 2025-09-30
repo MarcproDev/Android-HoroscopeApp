@@ -1,6 +1,9 @@
 plugins {
     alias(libs.plugins.android.application)
     alias(libs.plugins.kotlin.android)
+    id("kotlin-kapt")
+    id("com.google.dagger.hilt.android")
+    id ("androidx.navigation.safeargs.kotlin")
 }
 
 android {
@@ -43,10 +46,14 @@ dependencies {
     val navVersion = "2.9.3"
 
     //NavComponent
-    //noinspection UseTomlInstead
+    //noinspection GradleDependency,UseTomlInstead
     implementation("androidx.navigation:navigation-fragment-ktx:${navVersion}")
-    //noinspection UseTomlInstead
+    //noinspection GradleDependency,UseTomlInstead
     implementation("androidx.navigation:navigation-ui-ktx:${navVersion}")
+
+    //DaggerHilt
+    implementation(libs.hilt.android)
+    kapt(libs.hilt.compiler)
 
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.appcompat)
