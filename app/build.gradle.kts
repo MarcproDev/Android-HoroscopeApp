@@ -18,6 +18,7 @@ android {
         versionName = "1.0"
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
+
     }
 
     buildTypes {
@@ -29,13 +30,13 @@ android {
                 "proguard-rules.pro"
             )
 
-            resValue("String", "cosmic_check_in", "HoroscopeApp")
+            resValue("string", "cosmic", "HoroscApp")
 
             buildConfigField("String", "BASE_URL", "\"https://newastro.vercel.app/\"")
         }
         getByName("debug") {
             isDebuggable = true
-            resValue("String", "cosmic_check_in", "{DEBUG}HoroscopeApp")
+            resValue("string", "cosmic", "[DEBUG] HoroscApp")
             buildConfigField("String", "BASE_URL", "\"https://newastro-debug.vercel.app/\"")
         }
     }
