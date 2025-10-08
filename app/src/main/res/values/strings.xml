@@ -25,4 +25,8 @@
     <string name="button_come_back">click to come back</string>
 
 
+<!--    lucky-->
+    <string name="lucky_share">share</string>
+
+
 </resources>
