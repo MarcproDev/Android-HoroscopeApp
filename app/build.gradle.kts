@@ -57,6 +57,7 @@ android {
 dependencies {
     implementation(libs.androidx.runtime)
     val navVersion = "2.9.3"
+    val cameraVersion = "1.2.3"
 
     //NavComponent
     //noinspection GradleDependency,UseTomlInstead
@@ -72,6 +73,13 @@ dependencies {
     implementation("com.squareup.retrofit2:retrofit:3.0.0")
     implementation("com.squareup.retrofit2:converter-gson:3.0.0")
     implementation("com.squareup.okhttp3:logging-interceptor:4.3.1") //interceptor
+
+    //Camera X
+    implementation("androidx.camera:camera-core:${cameraVersion}")
+    implementation("androidx.camera:camera-camera2:${cameraVersion}")
+    implementation("androidx.camera:camera-lifecycle:${cameraVersion}")
+    implementation("androidx.camera:camera-view:${cameraVersion}")
+    implementation("androidx.camera:camera-extensions:${cameraVersion}")
 
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.appcompat)
