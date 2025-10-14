@@ -2,7 +2,12 @@
 agp = "8.12.3"
 cameraVersion = "1.5.1"
 converterGson = "3.0.0"
+espressoContrib = "3.7.0"
+espressoCoreVersion = "3.7.0"
+espressoIntents = "3.7.0"
+fragmentTesting = "1.8.9"
 hiltAndroid = "2.57.2"
+hiltAndroidCompiler = "2.57.2"
 kotlin = "2.2.20"
 coreKtx = "1.17.0"
 junit = "4.13.2"
@@ -19,6 +24,7 @@ runtime = "1.9.3"
 junitJupiter = "6.0.0"
 junitJunit = "4.13.2"
 junitJupiterVersion = "6.0.0"
+junitJunitJupiter = "6.0.0"
 
 
 [libraries]
@@ -28,8 +34,14 @@ androidx-camera-extensions = { module = "androidx.camera:camera-extensions", ver
 androidx-camera-lifecycle = { module = "androidx.camera:camera-lifecycle", version.ref = "cameraVersion" }
 androidx-camera-view = { module = "androidx.camera:camera-view", version.ref = "cameraVersion" }
 androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "coreKtx" }
+androidx-espresso-contrib = { module = "androidx.test.espresso:espresso-contrib", version.ref = "espressoContrib" }
+androidx-espresso-core-v351 = { module = "androidx.test.espresso:espresso-core", version.ref = "espressoCoreVersion" }
+androidx-espresso-intents = { module = "androidx.test.espresso:espresso-intents", version.ref = "espressoIntents" }
+androidx-fragment-testing = { module = "androidx.fragment:fragment-testing", version.ref = "fragmentTesting" }
 converter-gson = { module = "com.squareup.retrofit2:converter-gson", version.ref = "converterGson" }
 hilt-android = { module = "com.google.dagger:hilt-android", version.ref = "hiltAndroid" }
+hilt-android-compiler = { module = "com.google.dagger:hilt-android-compiler", version.ref = "hiltAndroidCompiler" }
+hilt-android-testing = { module = "com.google.dagger:hilt-android-testing", version.ref = "hiltAndroidCompiler" }
 hilt-compiler = { module = "com.google.dagger:hilt-compiler", version.ref = "hiltAndroid" }
 junit = { group = "junit", name = "junit", version.ref = "junit" }
 androidx-junit = { group = "androidx.test.ext", name = "junit", version.ref = "junitVersion" }
@@ -46,6 +58,7 @@ junit-junit = { group = "junit", name = "junit", version.ref = "junitJunit" }
 mockk = { module = "io.mockk:mockk", version.ref = "mockk" }
 retrofit = { module = "com.squareup.retrofit2:retrofit", version.ref = "converterGson" }
 jupiter-junit-jupiter = { group = "org.junit.jupiter", name = "junit-jupiter", version.ref = "junitJupiterVersion" }
+junit-junit-jupiter = { group = "org.junit.jupiter", name = "junit-jupiter", version.ref = "junitJunitJupiter" }
 
 [plugins]
 android-application = { id = "com.android.application", version.ref = "agp" }

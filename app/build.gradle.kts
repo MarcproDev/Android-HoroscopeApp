@@ -17,7 +17,7 @@ android {
         versionCode = 1
         versionName = "1.0"
 
-        testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
+        testInstrumentationRunner = "com.example.horoscopeapp.CustomTestRunner"
 
     }
 
@@ -68,6 +68,7 @@ dependencies {
     testImplementation(libs.junit.jupiter)
     testImplementation(libs.junit.jupiter)
     testImplementation(libs.jupiter.junit.jupiter)
+    testImplementation(libs.junit.junit.jupiter)
     val navVersion = "2.9.3"
     val cameraVersion = "1.2.3"
 
@@ -108,4 +109,12 @@ dependencies {
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
     testImplementation(kotlin("test"))
+
+    //UITesting
+    androidTestImplementation(libs.androidx.espresso.core.v351)
+    androidTestImplementation(libs.androidx.espresso.contrib)
+    androidTestImplementation (libs.androidx.espresso.intents)//testear los intent
+    androidTestImplementation (libs.hilt.android.testing)
+    androidTestImplementation (libs.androidx.fragment.testing)
+    kaptAndroidTest(libs.hilt.android.compiler)
 }
