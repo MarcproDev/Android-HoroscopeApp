@@ -39,7 +39,7 @@
 <td width="50%" align="center">
 
  <a target="_blank" align="center">
-<img width="200" height="300" alt="Captura de pantalla 2026-04-28 143900" src="https://github.com/user-attachments/assets/658489c5-28cb-40cb-abb0-af40aeb4f01f" />
+<img width="441" height="591" alt="Captura de pantalla 2026-04-28 143815" src="https://github.com/user-attachments/assets/3ca61b25-8b95-45ca-8b1e-fed3d74ede69" />
 </a>
   
   </td>
